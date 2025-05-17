@@ -1,0 +1,1 @@
+Esta es una página web desarrollada como proyecto educativo para el curso de Front End JS impartido por Talento Tech.
