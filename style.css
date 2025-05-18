@@ -1,0 +1,35 @@
+header{ 
+    background-color: #acf2be;
+    color: green;
+    padding: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;  
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+.nav-list{   
+    list-style-type: none;  
+    text-decoration: none;
+    color: green;
+    background-color: #6c9d78;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+hr{
+    border: 1px solid #ffffff;
+    margin: 20px 0;
+}
+
+
+footer{
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
