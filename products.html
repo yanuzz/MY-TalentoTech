@@ -4,50 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./style.css">
-    <title>MATech dataloggers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+
+    <title>MATech - Productos y servicios</title>
 </head>
 <body>
     <header>
-        <table>
+        <div class="header-container">
             <tr>
                 <td><img src="./images/logo4_sinFondo.png" alt="Logo de MATech" width="20%" height="20%"></td>
-                <td><h1>MATech dataloggers </h1></td>
+                <td><h1>MATech IoT Solutions </h1></td>
             </tr>
-        </table>
+        </div>
         <hr>
         <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Inicio</a></li>
+            <ul class="nav-bar">
+                <li><a href="index.html">  
+                    <i class="fa-solid fa-house"></i></a></li>
                 <li><a href="products.html">Productos</a></li>
                 <li><a href="contact.html">Contacto</a></li>
                 <li><a href="location.html">Ubicación</a></li>
+                <li><a><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <hr>
     <main>
-        <section>
-            <h2>¿Quiénes somos?</h2>
-            <p>MATech es una empresa dedicada a la tecnología y la innovación.</p>
-        </section>
-        <section>
-            <img src="./images/datalogger.png" alt = "Imagen de datalogger modelo 1" width="25%" height="25%">	
-        </section>
-        <section>
-            <video width="50%" height="50%" controls autoplay muted>
-                <source src="./videos/video1.mp4" type="video/mp4">
-                <track src="./videos/subtitles.vtt" kind="subtitles" srclang="es" label="Español" default>
-                Tu navegador no soporta la reproducción de videos.
-            </video>
-        </section>
+        <section> 
+        <div>
+            <h2>Nuestros productos y servicios</h2>
+        </div>
+        <div class="gallery">
+            <div class="product">
+                <img src="./images/datalogger.png" alt="Modelo 1">
+                <h3>Datalogger de condiciones ambientales</h3>
+                <div class="button-container">
+                    <button class="add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i> 
+                    </button>
+                    <button class="info-btn">Más información</button>
+                </div>
+
+            </div>
+            <div class="product">
+                <img src="./images/datalogger.png" alt="Modelo 2">
+                <h3>Dataloggers de variables eléctricas</h3>
+                <div class="button-container">
+                    <button class="add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i> 
+                    </button>
+                    <button class="info-btn">Más información</button>  
+                </div>
+
+            </div>
+            <div class="product">
+                <img src="./images/datalogger.png" alt="Modelo 3">
+                <h3>Calibración de datalogger</h3>
+                <div class="button-container">
+                    <button class="add-to-cart">
+                        <i class="fa-solid fa-cart-shopping"></i> 
+                    </button>
+                    <button class="info-btn">Más información</button>
+                </div>
+            </div>
+        </div>
+        
+        
+    <div class="whatsapp">
+        <a href = "https://api.whatsapp.com/send?phone=5491141456910&text=Hola%20MATech,%20quiero%20más%20información" target="_blank">
+            <img src="./images/wpp.png" alt="Icono de WhatsApp" width="15%" height="15%"> 
+        </a>
+    </div>
+    </section>
+
     </main>
 
-    <a href="index.html">Volver</a>
+    <a class="back" href="index.html">Volver</a>
+    
     <footer>
-        <hr>
-        <p> Desarrolladora: Yanina Maldonado - 2025  | <a href="mailto:yanuzz.maldo@gmail.com">Email: matech@gmail.com</a></p>
-        <hr>
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i> <!-- Icono de Instagram--> </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i> <!-- Icono de Facebook--> </a>    
+        <a href="https://www.twitter.com/" target="_blank">
+            <i class="fa-brands fa-twitter"></i> <!-- Icono de Twitter--> </a>      
+        <a href="https://www.linkedin.com/" target="_blank">    
+            <i class="fa-brands fa-linkedin"></i> <!-- Icono de LinkedIn--> </a>
+        <a href="https://github.com/yanuzz/MY-TalentoTech" target="_blank">
+            <i class="fa-brands fa-github"></i> <!-- Icono de GitHub--> </a>
+        <p> Yanina Maldonado - 2025  | <a href="mailto:yanuzz.maldo@gmail.com"> matech@gmail.com</a></p>
+
     </footer>
 </body>
 </html>

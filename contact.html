@@ -4,31 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>MATech dataloggers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css">
+
+    <title>MATech - Contacto</title>
 </head>
 <body>
     <header>
-        <table>
+        <div class="header-container">
             <tr>
                 <td><img src="./images/logo4_sinFondo.png" alt="Logo de MATech" width="20%" height="20%"></td>
-                <td><h1>MATech dataloggers </h1></td>
+                <td><h1>MATech IoT Solutions </h1></td>
             </tr>
-        </table>
+        </div>
         <hr>
         <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Inicio</a></li>
+            <ul class="nav-bar">
+                <li><a href="index.html">  
+                    <i class="fa-solid fa-house"></i></a></li>
                 <li><a href="products.html">Productos</a></li>
                 <li><a href="contact.html">Contacto</a></li>
                 <li><a href="location.html">Ubicación</a></li>
+                <li><a><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <hr>
     <main>
-        <form action="https://formspree.io/f/mzzrwpzg" method="post">
-            <input type="text" name="nombre" id="nombre"" placeholder="Nombre y Apellido" required>
+        <h2>Contacto</h2>
+        <section>
+            <div class="text-container">
+                <p>Si tenés alguna consulta o necesitás más información sobre nuestros productos, no dudes en contactarnos. Estamos aquí para ayudarte.</p>
+            </div>
+        <div class="form-container">
+            <form action="https://formspree.io/f/mzzrwpzg" method="post">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" required>
             <br>
             <input type="email" name="email" id="email" placeholder="Email" required>
             <br>
@@ -37,13 +52,36 @@
             <textarea name="mensaje" rows="4" cols="50" placeholder="Mensaje" required></textarea>
             <br>
             <input type="submit" name="enviar" id="enviar" value="Enviar">
+            <br>
             <input type="reset" name="limpiar" id="limpiar" value="Limpiar">
-        </form>
+            </form>
+        </div>
+    </section>
+    <section class="whatsapp">
+        <a href = "https://api.whatsapp.com/send?phone=5491141456910&text=Hola%20MATech,%20quiero%20más%20información" target="_blank">
+            <img src="./images/wpp.png" alt="Icono de WhatsApp" width="15%" height="15%"> 
+        </a>
+    </section>
+
+    
     </main> 
+
+    <a class="back" href="index.html">Volver</a>
+
     <footer>
-        <hr>
-        <p> Desarrolladora: Yanina Maldonado - 2025  | <a href="mailto:yanuzz.maldo@gmail.com">Email: matech@gmail.com</a></p>
-        <hr>
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <i class="fa-brands fa-instagram"></i> <!-- Icono de Instagram--> </a>
+        <a href="https://www.facebook.com/" target="_blank">
+            <i class="fa-brands fa-facebook"></i> <!-- Icono de Facebook--> </a>    
+        <a href="https://www.twitter.com/" target="_blank">
+            <i class="fa-brands fa-twitter"></i> <!-- Icono de Twitter--> </a>      
+        <a href="https://www.linkedin.com/" target="_blank">    
+            <i class="fa-brands fa-linkedin"></i> <!-- Icono de LinkedIn--> </a>
+        <a href="https://github.com/yanuzz/MY-TalentoTech" target="_blank">
+            <i class="fa-brands fa-github"></i> <!-- Icono de GitHub--> </a>
+        <p> Yanina Maldonado - 2025  | <a href="mailto:yanuzz.maldo@gmail.com"> matech@gmail.com</a></p>
+
     </footer>
 </body>
 
