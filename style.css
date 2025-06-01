@@ -313,6 +313,51 @@ footer a:hover {
 }
 
 
+/* Para pantallas de menos de 768px (pantallas pequeñas) */
+@media only screen and (max-width: 768px) {
+    form {
+    width: 80%;
+    margin: auto;
+    }
+
+    input, textarea {
+    width: 100%;
+    font-size: 1rem ;
+    }
+
+    header img{
+        width: auto;
+        height: 8em !important;
+        margin-right: 20px !important;
+    }
+
+    .nav-bar a{
+        font-size: 0.8rem !important;
+    }
+    .nav-bar{
+        gap: 1.5em !important;
+        margin-left: -5em !important;
+    }
+
+    footer {
+    font-size: 0.6rem !important;;
+    }
+
+    .index-media{
+        display: flex;
+        flex-direction: column !important;
+        width: 150% !important;    
+        align-items: left !important;
+        margin-left: -25% !important;
+    }
+
+    .whatsapp{
+        width: 100% !important;
+        margin-left: 50rem  !important;
+    }
+
+}
+
 
   /* Para pantallas de más de 1024px (escritorio) */
 @media (min-width: 1024px) {
