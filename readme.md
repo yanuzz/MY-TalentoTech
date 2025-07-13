@@ -1,6 +1,6 @@
 # MATech IoT Solutions - Página Web
 
-Este repositorio contiene el código fuente de la página web de **MATech IoT Solutions**. Este proyecto es una página web básica desarrollada como parte de un curso de Front-End. El objetivo es aprender a crear la estructura básica de una tienda online utilizando HTML y prepararla para futuras mejoras con CSS y JavaScript. Sin fines comerciales.
+Este repositorio contiene el código fuente de la página web de **MATech IoT Solutions**. Este proyecto es una página web básica desarrollada como parte de un curso de Front-End. El objetivo es aprender a crear la estructura básica de una tienda online utilizando HTML, CSS y Javascript. Sin fines comerciales.
 
 ## Tecnologías utilizadas
 
@@ -58,51 +58,51 @@ cd tienda-matech
 
 **2. Abre el proyecto**
 
-Abre index.html directamente en tu navegador.
+Abrí index.html directamente en tu navegador.
 
 **3. Accede a la tienda**
 
-Si abres directamente: archivo local en el navegador
+Si abrís directamente: archivo local en el navegador
 
 ## Funcionalidades
 
 **Carrito de Compras**
 
-✅ Agregar productos al carrito
-✅ Modificar cantidades
-✅ Eliminar productos
-✅ Vaciar carrito completo
-✅ Persistencia de datos (localStorage)
-✅ Contador visual en el ícono del carrito
+✅ Agregar productos al carrito  
+✅ Modificar cantidades  
+✅ Eliminar productos  
+✅ Vaciar carrito completo  
+✅ Persistencia de datos (localStorage)  
+✅ Contador visual en el ícono del carrito  
 
 **Productos**
 
-✅ Catálogo de 3 productos predefinidos
-✅ Información detallada de los productos importados
-✅ Precios en pesos argentinos
-✅ Imágenes de productos
+✅ Catálogo de 3 productos predefinidos  
+✅ Información detallada de los productos importados  
+✅ Precios en pesos argentinos  
+✅ Imágenes de productos  
 
 **Formulario de Contacto**
 
-✅ Validación en tiempo real
-✅ Validación de email
-✅ Validación de teléfono
-✅ Mensajes de error específicos
+✅ Validación en tiempo real  
+✅ Validación de email  
+✅ Validación de teléfono  
+✅ Mensajes de error específicos  
 
 **Finalización de Compra** 
 
-✅ Resumen de compra
-✅ Cálculo automático del total
-✅ Integración con WhatsApp
-✅ Mensaje automático con el total de la compra
+✅ Resumen de compra  
+✅ Cálculo automático del total  
+✅ Integración con WhatsApp  
+✅ Mensaje automático con el total de la compra  
 
 ## Compatibilidad
 
-Navegadores: Chrome, Firefox, Opera, Edge, Brave
-Dispositivos: Desktop, tablet, móvil
-Resoluciones: Diseño responsivo desde 600px hasta 1024px+
+Navegadores: Chrome, Firefox, Opera, Edge, Brave  
+Dispositivos: Desktop, tablet, móvil  
+Resoluciones: Diseño responsivo desde 600px hasta 1024px+  
 
 ## Comentarios
 
-No se ha logrado implementar el diseño responsivo de la manera deseada por la desarrolladora. 
+No se ha logrado implementar el diseño responsivo de la manera deseada por la desarrolladora.  
 El logo de WhatsApp no se ubica en el mismo lugar para cualquier resolución de pantalla. 

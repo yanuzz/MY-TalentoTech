@@ -50,7 +50,6 @@ function inicializarApp() {
     
     if (currentPage === 'products.html' || currentPage === '') {
         cargarProductosDesdeAPI();
-        configurarEventosProductos();
     }
     
     if (currentPage === 'contact.html') {
@@ -133,6 +132,9 @@ async function cargarProductosDesdeAPI() {
     mostrarLoader();
     
     try {
+        // Primero asignar productos por defecto
+        productos = [...productosDefault];
+        
         // Cargar todos los productos de la API
         const response = await fetch('https://fakestoreapi.com/products');
         
@@ -176,14 +178,14 @@ async function cargarProductosDesdeAPI() {
         ];
         
         console.log(`Cargados ${productosFiltrados.length} productos relevantes de la API`);
-        mostrarProductos(productos);
         
     } catch (error) {
         console.error('Error al cargar productos:', error);
         mostrarMensaje('No se pudieron cargar todos los productos. Mostrando productos disponibles.', 'error');
         productos = productosDefault;
-        mostrarProductos(productos);
     } finally {
+        mostrarProductos(productos);
+        configurarEventosProductos(); // Configurar eventos después de mostrar productos
         ocultarLoader();
     }
 }
@@ -224,31 +226,11 @@ function mostrarProductos(productos) {
     
     if (!gallery) return;
     
-    // Limpiar productos existentes (excepto los primeros 3 que ya están en HTML)
-    const productosExistentes = gallery.querySelectorAll('.product');
+    // Limpiar completamente la galería
+    gallery.innerHTML = '';
     
-    // Actualizar productos existentes con datos y precios
-    productosExistentes.forEach((card, index) => {
-        if (productos[index]) {
-            const producto = productos[index];
-            
-            // Agregar precio si no existe
-            if (!card.querySelector('.product-price')) {
-                const priceElement = document.createElement('p');
-                priceElement.className = 'product-price';
-                priceElement.textContent = `$${producto.price.toLocaleString('es-AR')}`;
-                card.querySelector('h3').after(priceElement);
-            }
-            
-            // Actualizar evento del botón
-            const btnCarrito = card.querySelector('.add-to-cart');
-            btnCarrito.onclick = () => agregarAlCarrito(producto);
-            btnCarrito.setAttribute('data-product-id', producto.id);
-        }
-    });
-    
-    // Agregar productos adicionales de la API
-    productos.slice(3).forEach(producto => {
+    // Crear todas las tarjetas de productos
+    productos.forEach(producto => {
         const productCard = crearTarjetaProducto(producto);
         gallery.appendChild(productCard);
     });
@@ -269,9 +251,6 @@ function crearTarjetaProducto(producto) {
             <button class="info-btn" onclick="mostrarInfoProducto(${producto.id})">Más información</button>
         </div>
     `;
-    
-    const btnCarrito = productCard.querySelector('.add-to-cart');
-    btnCarrito.onclick = () => agregarAlCarrito(producto);
     
     return productCard;
 }
@@ -624,9 +603,9 @@ function configurarEventosProductos() {
     
     botonesCarrito.forEach(boton => {
         boton.addEventListener('click', function() {
-            const productId = this.getAttribute('data-product-id');
+            const productId = parseInt(this.getAttribute('data-product-id'));
             if (productId) {
-                const producto = productos.find(p => p.id == productId);
+                const producto = productos.find(p => p.id === productId);
                 if (producto) {
                     agregarAlCarrito(producto);
                 }
